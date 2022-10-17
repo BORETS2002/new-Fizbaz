@@ -18,6 +18,8 @@ elBtn.addEventListener("click", function (evt) {
   elInputVal = elInput.value;
 
   if (elInputVal % 3 == 0 && elInputVal % 5 == 0  ){
+    non.textContent = ""
+
     fizAR.push(elInputVal)
     buzAR.push(elInputVal)
     fizbuzAR.push(elInputVal)
@@ -26,20 +28,24 @@ elBtn.addEventListener("click", function (evt) {
     elFizBuz.textContent = fizbuzAR;
   }
   else if (elInputVal % 3 == 0){
+    non.textContent = ""
+
     fizAR.push(elInputVal)
     elfiz.textContent = fizAR;
   }
 
   else if (elInputVal % 5 == 0){
     buzAR.push(elInputVal)
-
+    non.textContent = ""
     elbuzz.textContent = buzAR;
   }
-  else{
-    non.textContent = "bu son fizbaz emas"
+  else if (elInputVal % 3 != 0 && elInputVal % 5 != 0  ){
+    non.textContent = "banan"
   }
   elInput.value = ""
 })
+non.textContent = ""
 
 
-// elInput.value = "";
+
+ 
