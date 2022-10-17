@@ -40,7 +40,7 @@ elBtn.addEventListener("click", function (evt) {
     elbuzz.textContent = buzAR;
   }
   else if (elInputVal % 3 != 0 && elInputVal % 5 != 0  ){
-    non.textContent = "banan"
+    non.textContent = "bu son fizbaz emas"
   }
   elInput.value = ""
 })
